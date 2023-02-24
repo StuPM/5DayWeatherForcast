@@ -122,8 +122,45 @@ main {
   }
 }
 
+.helpContainer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+
+  > * {
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px black solid;
+    padding: 5px;
+  }
+
+  .helpShow {
+    transition: all 0.5s ease-in;
+  }
+
+  .helpInformation {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    transform: translateX(100%);
+
+    width: 250px;
+    height: auto;
+  }
+
+  &:hover > .helpInformation {
+    opacity: 100;
+    transform: translateX(0%);
+  }
+  &:hover > .helpShow {
+    opacity: 0;
+    border: 0px;
+  }
+}
+
 footer {
-  position: relative;
   background-color: white;
   margin-top: 20px;
 }

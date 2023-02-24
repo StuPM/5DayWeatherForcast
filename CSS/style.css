@@ -104,8 +104,40 @@ main {
   text-transform: capitalize;
 }
 
+.helpContainer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+.helpContainer > * {
+  font-size: 1.5rem;
+  background-color: white;
+  border: 1px black solid;
+  padding: 5px;
+}
+.helpContainer .helpShow {
+  transition: all 0.5s ease-in;
+}
+.helpContainer .helpInformation {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  transform: translateX(100%);
+  width: 250px;
+  height: auto;
+}
+.helpContainer:hover > .helpInformation {
+  opacity: 100;
+  transform: translateX(0%);
+}
+.helpContainer:hover > .helpShow {
+  opacity: 0;
+  border: 0px;
+}
+
 footer {
-  position: relative;
   background-color: white;
   margin-top: 20px;
 }

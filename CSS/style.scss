@@ -1,0 +1,138 @@
+$websiteBackgroundColour: rgba(173, 227, 234, 255);
+$forecastTileColour: white;
+
+/* LAYOUT DEBUG */
+* {
+  //   outline: 1px solid orange;
+  //   background-color: hsla(120, 50%, 50%, 0.18);
+  background-color: $websiteBackgroundColour;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* Rules for 500px width */
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+
+  header {
+    margin-top: 2%;
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background-color: white;
+      width: 100%;
+    }
+    h2 {
+      width: 90%;
+      margin: auto auto 4% auto;
+    }
+  }
+  body {
+    margin: 0;
+  }
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+#searchContainer {
+  display: flex;
+  margin-bottom: 4%;
+  position: sticky;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  * {
+    font-size: 2rem;
+  }
+
+  input {
+    flex-grow: 1;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: gainsboro;
+  }
+  button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+
+    &:hover {
+      transition: background-color 1s;
+      background-color: rgb(97, 248, 38);
+    }
+  }
+}
+
+#weatherContainer {
+  font-size: 2rem;
+
+  .successfulMessage,
+  .failureMessage {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 4%;
+  }
+  .failureMessage {
+    background-color: #ff3838;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.forecastContainer {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+
+  .forecastTile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 25px;
+
+    margin: 0 0 4% 0;
+    padding: 10px;
+
+    &,
+    div,
+    img {
+      background-color: $forecastTileColour;
+    }
+
+    .forecastTempDescriptionContainer {
+      display: flex;
+
+      .forecastActualTempContainer,
+      .forecastFeelsLikeTempContainer {
+        margin: 10px;
+      }
+    }
+
+    .forecastDescription {
+      text-transform: capitalize;
+    }
+  }
+}
+
+footer {
+  position: relative;
+  background-color: white;
+  margin-top: 20px;
+}
+
+img {
+  width: 20vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 100px;
+  min-height: 100px;
+}

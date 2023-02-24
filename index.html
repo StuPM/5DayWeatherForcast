@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUNCHTIME WEATHER FORECAST</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/media.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.3/axios.min.js"></script>
+    <script src="./Scripts/scripts.js" type="module"></script>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <h1>LUNCHTIME WEATHER FORECAST</h1>
+      <h2>What will the weather be like at lunchtime for the next 5 days?</h2>
+    </header>
+    <main>
+      <form id="searchContainer">
+        <input
+          name="searchField"
+          type="text"
+          class=""
+          placeholder="Search..."
+        />
+        <button id="searchButton">&#128269;</button>
+      </form>
+
+      <div id="weatherContainer"></div>
+    </main>
+
+    <footer>Stuart Paul McGee</footer>
+  </body>
+</html>

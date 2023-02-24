@@ -1,3 +1,4 @@
+//Rules for greater than 540px
 @media (min-width: 540px) {
   .forecastContainer {
     flex-direction: row;
@@ -20,6 +21,6 @@
   #searchContainer {
     max-width: 700px;
     margin: auto;
-    margin-bottom: 4%;
+    margin-bottom: 15px;
   }
 }

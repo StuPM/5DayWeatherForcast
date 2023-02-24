@@ -1,24 +1,25 @@
-$websiteBackgroundColour: rgba(173, 227, 234, 255);
-$forecastTileColour: white;
-
-/* LAYOUT DEBUG */
-* {
-  //   outline: 1px solid orange;
-  //   background-color: hsla(120, 50%, 50%, 0.18);
-  background-color: $websiteBackgroundColour;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
-/* Rules for 500px width */
 html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 
+  background: rgb(54, 63, 212);
+  background: linear-gradient(
+    346deg,
+    rgba(54, 63, 212, 1) 0%,
+    rgba(29, 253, 205, 1) 94%
+  );
+
+  body {
+    margin: 0;
+  }
+
   header {
-    margin-top: 2%;
+    margin: 15px 0;
     text-align: center;
+
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
@@ -26,12 +27,8 @@ html {
       width: 100%;
     }
     h2 {
-      width: 90%;
-      margin: auto auto 4% auto;
+      margin: auto;
     }
-  }
-  body {
-    margin: 0;
   }
 }
 
@@ -42,10 +39,11 @@ main {
 
 #searchContainer {
   display: flex;
-  margin-bottom: 4%;
+  margin-bottom: 15px;
   position: sticky;
   top: 0px;
   background-color: rgba(0, 0, 0, 0);
+
   * {
     font-size: 2rem;
   }
@@ -55,6 +53,7 @@ main {
     padding-left: 10px;
     border-radius: 10px;
     background-color: gainsboro;
+    border-style: solid;
   }
   button {
     width: 40px;
@@ -74,9 +73,8 @@ main {
 
   .successfulMessage,
   .failureMessage {
-    align-self: center;
     text-align: center;
-    margin-bottom: 4%;
+    margin-bottom: 15px;
   }
   .failureMessage {
     background-color: #ff3838;
@@ -104,18 +102,20 @@ main {
     &,
     div,
     img {
-      background-color: $forecastTileColour;
+      background-color: white;
     }
 
     .forecastTempDescriptionContainer {
       display: flex;
-
       .forecastActualTempContainer,
       .forecastFeelsLikeTempContainer {
         margin: 10px;
       }
     }
 
+    .forecastDate {
+      text-decoration: underline;
+    }
     .forecastDescription {
       text-transform: capitalize;
     }

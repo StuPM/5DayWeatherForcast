@@ -1,17 +1,16 @@
-/* LAYOUT DEBUG */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-* {
-  background-color: rgb(173, 227, 234);
-}
-
-/* Rules for 500px width */
 html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  background: rgb(54, 63, 212);
+  background: linear-gradient(346deg, rgb(54, 63, 212) 0%, rgb(29, 253, 205) 94%);
+}
+html body {
+  margin: 0;
 }
 html header {
-  margin-top: 2%;
+  margin: 15px 0;
   text-align: center;
 }
 html header h1 {
@@ -21,11 +20,7 @@ html header h1 {
   width: 100%;
 }
 html header h2 {
-  width: 90%;
-  margin: auto auto 4% auto;
-}
-html body {
-  margin: 0;
+  margin: auto;
 }
 
 main {
@@ -35,7 +30,7 @@ main {
 
 #searchContainer {
   display: flex;
-  margin-bottom: 4%;
+  margin-bottom: 15px;
   position: sticky;
   top: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -48,6 +43,7 @@ main {
   padding-left: 10px;
   border-radius: 10px;
   background-color: gainsboro;
+  border-style: solid;
 }
 #searchContainer button {
   width: 40px;
@@ -65,9 +61,8 @@ main {
 }
 #weatherContainer .successfulMessage,
 #weatherContainer .failureMessage {
-  align-self: center;
   text-align: center;
-  margin-bottom: 4%;
+  margin-bottom: 15px;
 }
 #weatherContainer .failureMessage {
   background-color: #ff3838;
@@ -101,6 +96,9 @@ main {
 .forecastContainer .forecastTile .forecastTempDescriptionContainer .forecastActualTempContainer,
 .forecastContainer .forecastTile .forecastTempDescriptionContainer .forecastFeelsLikeTempContainer {
   margin: 10px;
+}
+.forecastContainer .forecastTile .forecastDate {
+  text-decoration: underline;
 }
 .forecastContainer .forecastTile .forecastDescription {
   text-transform: capitalize;

@@ -3,8 +3,7 @@ html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  background: rgb(54, 63, 212);
-  background: linear-gradient(346deg, rgb(54, 63, 212) 0%, rgb(29, 253, 205) 94%);
+  background: linear-gradient(346deg, rgb(54, 63, 212) 0%, rgb(29, 253, 205) 94%) no-repeat center center fixed;
 }
 html body {
   margin: 0;
@@ -135,11 +134,6 @@ main {
 .helpContainer:hover > .helpShow {
   opacity: 0;
   border: 0px;
-}
-
-footer {
-  background-color: white;
-  margin-top: 20px;
 }
 
 img {

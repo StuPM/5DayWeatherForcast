@@ -92,7 +92,7 @@ const validateSearchInput = (searchInput) => {
 
 async function callNameAPI(name) {
   const APIReturnName = await axios.get(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=1&appid=${apiKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=1&appid=${apiKey}`
   );
   return APIReturnName;
 }

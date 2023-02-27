@@ -27,7 +27,7 @@ export function createForecast(inputArray) {
                         <div>${fore[2]}\u2103</div>
                     </div>               
                 </div>
-                <img class="forecastIcon" src="http://openweathermap.org/img/wn/${
+                <img class="forecastIcon" src="https://openweathermap.org/img/wn/${
                   fore[4]
                 }@2x.png">
             </div>

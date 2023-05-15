@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
+$spacingBetween: 15px;
+$containerFontSize: 2rem;
+$genericFontSize: 1.5rem;
+
+@mixin flexSettings {
+  display: flex;
+  justify-content: space-between;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
@@ -17,7 +26,7 @@ html {
   }
 
   header {
-    margin: 15px 0;
+    margin: $spacingBetween 0;
     text-align: center;
 
     h1 {
@@ -45,7 +54,7 @@ main {
   background-color: rgba(0, 0, 0, 0);
 
   * {
-    font-size: 2rem;
+    font-size: $containerFontSize;
   }
 
   input {
@@ -69,7 +78,7 @@ main {
 }
 
 #weatherContainer {
-  font-size: 2rem;
+  font-size: $containerFontSize;
 
   .successfulMessage,
   .failureMessage {
@@ -120,15 +129,24 @@ main {
       text-transform: capitalize;
     }
   }
+
+  img {
+    width: 20vw;
+    height: 20vw;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+  }
 }
 
 .helpContainer {
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  bottom: 50px;
+  right: 10px;
 
   > * {
-    font-size: 1.5rem;
+    font-size: $genericFontSize;
     background-color: white;
     border: 1px black solid;
     padding: 5px;
@@ -160,11 +178,35 @@ main {
   }
 }
 
-img {
-  width: 20vw;
-  height: 20vw;
-  max-width: 200px;
-  max-height: 200px;
-  min-width: 100px;
-  min-height: 100px;
+footer {
+  margin: $spacingBetween 0;
+
+  background-color: white;
+
+  .footerContainer {
+    @include flexSettings;
+    height: 30px;
+    width: 90%;
+    margin: auto;
+
+    .linkedIn {
+      @include flexSettings;
+      align-items: center;
+
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    div {
+      align-self: center;
+    }
+  }
+
+  * {
+    font-size: $genericFontSize;
+  }
 }

@@ -102,11 +102,19 @@ main {
 .forecastContainer .forecastTile .forecastDescription {
   text-transform: capitalize;
 }
+.forecastContainer img {
+  width: 20vw;
+  height: 20vw;
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 100px;
+  min-height: 100px;
+}
 
 .helpContainer {
   position: fixed;
-  bottom: 0px;
-  right: 0px;
+  bottom: 50px;
+  right: 10px;
 }
 .helpContainer > * {
   font-size: 1.5rem;
@@ -136,11 +144,31 @@ main {
   border: 0px;
 }
 
-img {
-  width: 20vw;
-  height: 20vw;
-  max-width: 200px;
-  max-height: 200px;
-  min-width: 100px;
-  min-height: 100px;
+footer {
+  margin: 15px 0;
+  background-color: white;
+}
+footer .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 90%;
+  margin: auto;
+}
+footer .footerContainer .linkedIn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+footer .footerContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+footer .footerContainer div {
+  align-self: center;
+}
+footer * {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

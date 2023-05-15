@@ -9,7 +9,7 @@ searchContainer.addEventListener("submit", searchForLocationByName);
 
 const weatherContainer = document.getElementById("weatherContainer");
 
-const apiKey = `db9f0fffb47e5ae21795c55afdc6a165`;
+const apiKey = atob(`ZGI5ZjBmZmZiNDdlNWFlMjE3OTVjNTVhZmRjNmExNjU`);
 
 window.addEventListener("DOMContentLoaded", (event) => {
   //Once loaded, ask for geolocation
@@ -28,7 +28,7 @@ function fail({ code }) {
 
 // async
 async function searchForLocationByName(event) {
-  event.preventDefault(); //Stop the form from submitting
+  event.preventDefault();
 
   const searchField = searchContainer.elements.namedItem("searchField").value;
 
@@ -72,7 +72,7 @@ const setForecast = (data) => {
 
   weatherContainer.insertAdjacentHTML(
     "beforeend",
-    createSuccessMessage(data.city.name, null, data.city.country)
+    createSuccessMessage(data.city.name, data.city.country)
   );
 
   weatherContainer.insertAdjacentHTML(

@@ -1,18 +1,33 @@
-# WEATHER FORECAST PROJECT
+# LUNCHTIME WEATHER FORECAST
 
-## AIM
+An easy to understand website, that displays the weather at lunchtime for the next 5 days at your location.
 
-I have created a weather forecast website, that will show you the weather for the next 5 days at lunchtime/12 noon.
+## Live link
 
-### BUILD PROCESS
+[LUNCHTIME WEATHER FORECAST](https://simpsons-quotes-spm.netlify.app).
 
-Using the OpenWeatherAPI to provide 2 ways to get the forecast:
+## Features
 
-1. Using the GEO Location API built in with browsers.
-2. Searching for a location via a search bar.
+When the website loads for the first time, a popup will appear asking for location permission to be allowed or blocked.
 
-## To Do
+- If allowed, weather based on your location determined by the browser will appear.
+- If denied, a error message will display explaining the avaliable options.
 
-- [ ] Obsequre the API key
-- [ ] Display the location state (name and country displayed currently)
-- [ ] Bring back multiple results from the search bar for location
+The search bar can then be used to search for a location to display the weather for, for instance, if you live in London but want to know the weather in New York.
+
+Lastly, a help box is shown in the bottom right that explains the options avalible for the search.
+
+## Technology Stack
+
+- HTML5, CSS3 and JavaScript.
+  - Writing HTML directly to build the basic of the website.
+  - SASS to apply style and also media queries to apply conditional styling based on the screen size.
+  - Generating HTML through JavaScript functions to cater for changing API results.
+- Geo-location
+  - Through the geolocation feature avaliable in most internet browsers to obtain the users location.
+- API
+  - Using [OpenWeather](https://openweathermap.org/) for an API to get the weather for the supplied location.
+
+## Authors
+
+Built and created by me, Stuart Paul McGee in the context of the 2023 full-time Software Engineering bootcamp run by [The Jump Digital School](https://www.thejump.tech/).

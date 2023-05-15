@@ -55,6 +55,6 @@ export function createFailureMessage(code) {
   }
 }
 
-export function createSuccessMessage(name, state = "", country) {
+export function createSuccessMessage(name, country) {
   return `<div class="successfulMessage">Your location is ${name}, ${country}.</div>`;
 }

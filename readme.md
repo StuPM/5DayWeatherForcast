@@ -4,7 +4,7 @@ An easy to understand website that displays the weather at lunchtime for the nex
 
 ## Live link
 
-[LUNCHTIME WEATHER FORECAST](https://simpsons-quotes-spm.netlify.app).
+[LUNCHTIME WEATHER FORECAST](https://5dayweatherforcast.netlify.app/).
 
 ## Features
 

@@ -1,6 +1,6 @@
 # LUNCHTIME WEATHER FORECAST
 
-An easy to understand website, that displays the weather at lunchtime for the next 5 days at your location.
+An easy to understand website that displays the weather at lunchtime for the next 5 days at your location.
 
 ## Live link
 
@@ -11,20 +11,20 @@ An easy to understand website, that displays the weather at lunchtime for the ne
 When the website loads for the first time, a popup will appear asking for location permission to be allowed or blocked.
 
 - If allowed, weather based on your location determined by the browser will appear.
-- If denied, a error message will display explaining the avaliable options.
+- If denied, an error message will display explaining the available options to show you weather.
 
-The search bar can then be used to search for a location to display the weather for, for instance, if you live in London but want to know the weather in New York.
+As well as the above, the search bar can be used to search for a location to display the weather for. For instance, if you live in London but want to know the weather in New York.
 
-Lastly, a help box is shown in the bottom right that explains the options avalible for the search.
+Lastly, a help box is shown in the bottom right that explains the options available when searching.
 
 ## Technology Stack
 
 - HTML5, CSS3 and JavaScript.
-  - Writing HTML directly to build the basic of the website.
-  - SASS to apply style and also media queries to apply conditional styling based on the screen size.
+  - Writing HTML directly to build the basics of the website.
+  - SASS to apply styling and also media queries to apply conditional styling based on the screen size.
   - Generating HTML through JavaScript functions to cater for changing API results.
 - Geo-location
-  - Through the geolocation feature avaliable in most internet browsers to obtain the users location.
+  - Through the geolocation feature available in most internet browsers to obtain the user's location.
 - API
   - Using [OpenWeather](https://openweathermap.org/) for an API to get the weather for the supplied location.
 

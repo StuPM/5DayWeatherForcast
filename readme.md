@@ -1,6 +1,6 @@
 # LUNCHTIME WEATHER FORECAST
 
-An easy to understand website that displays the weather at lunchtime for the next 5 days at your location.
+An easy to understand website, that displays the weather at lunchtime for the next 5 days at your location.
 
 ## Live link
 
@@ -11,9 +11,9 @@ An easy to understand website that displays the weather at lunchtime for the nex
 When the website loads for the first time, a popup will appear asking for location permission to be allowed or blocked.
 
 - If allowed, weather based on your location determined by the browser will appear.
-- If denied, an error message will display explaining the available options to show you weather.
+- If denied, an error message will appear, explaining the available options to show you the weather.
 
-As well as the above, the search bar can be used to search for a location to display the weather for. For instance, if you live in London but want to know the weather in New York.
+As well as the above, the search bar can be used to search for a location to display the weather. For instance, if you live in London but want to know the weather in New York.
 
 Lastly, a help box is shown in the bottom right that explains the options available when searching.
 
@@ -30,4 +30,4 @@ Lastly, a help box is shown in the bottom right that explains the options availa
 
 ## Authors
 
-Built and created by me, Stuart Paul McGee in the context of the 2023 full-time Software Engineering bootcamp run by [The Jump Digital School](https://www.thejump.tech/).
+Built and created by me, Stuart Paul McGee, in the context of the 2023 full-time Software Engineering bootcamp run by [The Jump Digital School](https://www.thejump.tech/).

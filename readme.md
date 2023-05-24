@@ -4,7 +4,7 @@ An easy to understand website, that displays the weather at lunchtime for the ne
 
 ## Live link
 
-[LUNCHTIME WEATHER FORECAST](https://5dayweatherforcast.netlify.app/).
+[Lunchtime Weather Forecast](https://5dayweatherforcast.netlify.app/).
 
 ## Features
 

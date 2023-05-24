@@ -1,4 +1,4 @@
-# LUNCHTIME WEATHER FORECAST
+# Lunchtime Weather Forecast
 
 An easy to understand website, that displays the weather at lunchtime for the next 5 days at your location.
 
@@ -28,6 +28,6 @@ Lastly, a help box is shown in the bottom right that explains the options availa
 - API
   - Using [OpenWeather](https://openweathermap.org/) for an API to get the weather for the supplied location.
 
-## Authors
+## Author
 
 Built and created by me, Stuart Paul McGee, in the context of the 2023 full-time Software Engineering bootcamp run by [The Jump Digital School](https://www.thejump.tech/).

@@ -1,14 +1,4 @@
-export function createForecast(inputArray) {
-  const weekday = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
+export function createForecast(inputArray, weekday) {
   let stringToReturn = `<div class="forecastContainer">`;
   for (const fore of inputArray) {
     stringToReturn += `
@@ -60,3 +50,13 @@ export function createFailureMessage(code) {
 export function createSuccessMessage(name, country) {
   return `<div class="successfulMessage">Your location is ${name}, ${country}.</div>`;
 }
+
+export const weekday = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];

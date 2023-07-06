@@ -2,6 +2,7 @@ import {
   createForecast,
   createFailureMessage,
   createSuccessMessage,
+  weekday,
 } from "./generateHTML.js";
 
 const searchContainer = document.getElementById("searchContainer");
@@ -77,7 +78,7 @@ const setForecast = (data) => {
 
   weatherContainer.insertAdjacentHTML(
     "beforeend",
-    createForecast(filterForecast)
+    createForecast(filterForecast, weekday)
   );
 };
 

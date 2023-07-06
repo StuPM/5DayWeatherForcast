@@ -6,6 +6,9 @@ html {
   background: linear-gradient(346deg, rgb(54, 63, 212) 0%, rgb(29, 253, 205) 94%) no-repeat center center fixed;
 }
 html body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
 }
 html header {
@@ -25,6 +28,7 @@ html header h2 {
 main {
   width: 90%;
   margin: auto;
+  flex-grow: 2;
 }
 
 #searchContainer {
@@ -97,7 +101,7 @@ main {
   margin: 10px;
 }
 .forecastContainer .forecastTile .forecastDate {
-  text-decoration: underline;
+  font-weight: bolder;
 }
 .forecastContainer .forecastTile .forecastDescription {
   text-transform: capitalize;
@@ -171,4 +175,15 @@ footer .footerContainer div {
 }
 footer * {
   font-size: 1.5rem;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }/*# sourceMappingURL=style.css.map */

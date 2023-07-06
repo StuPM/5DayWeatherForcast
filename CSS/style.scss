@@ -22,6 +22,10 @@ html {
     no-repeat center center fixed;
 
   body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
     margin: 0;
   }
 
@@ -44,6 +48,7 @@ html {
 main {
   width: 90%;
   margin: auto;
+  flex-grow: 2;
 }
 
 #searchContainer {
@@ -123,7 +128,7 @@ main {
     }
 
     .forecastDate {
-      text-decoration: underline;
+      font-weight: bolder;
     }
     .forecastDescription {
       text-transform: capitalize;
@@ -209,4 +214,15 @@ footer {
   * {
     font-size: $genericFontSize;
   }
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }

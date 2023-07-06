@@ -186,4 +186,26 @@ footer * {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+@media (min-width: 540px) {
+  .forecastContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .forecastContainer .forecastTile {
+    margin: 0;
+  }
+  .forecastContainer .forecastTile .forecastTempContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #searchContainer {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
